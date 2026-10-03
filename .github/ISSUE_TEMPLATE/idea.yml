@@ -1,6 +1,6 @@
 name: Idea or request
 description: Something GameShelf should do, or do differently.
-labels: ["idea", "beta"]
+labels: ["enhancement", "beta"]
 body:
   - type: textarea
     id: idea
