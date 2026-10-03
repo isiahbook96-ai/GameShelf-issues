@@ -1,0 +1,16 @@
+name: Idea or request
+description: Something GameShelf should do, or do differently.
+labels: ["idea", "beta"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: What should GameShelf do, and what would it help you with?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: GameShelf version
+      description: If you know it - right-click GameShelf.exe > Properties > Details.

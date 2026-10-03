@@ -1,0 +1,46 @@
+name: Report a problem
+description: Something went wrong in GameShelf. Attach the zip from Settings > Report a problem.
+labels: ["bug", "beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing GameShelf! In GameShelf, open **Settings > Report a problem** - it saves a zip
+        of the logs and settings (API keys, account names and your Windows user name taken out) and shows
+        it in File Explorer. Drag that zip into the box at the bottom of this page.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did GameShelf do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      description: The steps, if you know them. Which game and emulator, keyboard or controller (which one)?
+      placeholder: |
+        1. Open the Library
+        2. Press Y on a DualSense
+        3. ...
+  - type: dropdown
+    id: how-often
+    attributes:
+      label: How often?
+      options:
+        - Every time
+        - Sometimes
+        - Once so far
+  - type: input
+    id: version
+    attributes:
+      label: GameShelf version
+      description: Filled in for you when the page is opened from GameShelf.
+  - type: textarea
+    id: report-zip
+    attributes:
+      label: Report zip
+      description: Drag the GameShelf-report-....zip file here.
+    validations:
+      required: true
