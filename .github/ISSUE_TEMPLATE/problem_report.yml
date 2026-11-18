@@ -41,6 +41,8 @@ body:
     id: report-zip
     attributes:
       label: Report zip
-      description: Drag the GameShelf-report-....zip file here.
+      description: >-
+        Drag the GameShelf-report-....zip file here. If GameShelf won't start, attach gameshelf.log and
+        crash.log from %LOCALAPPDATA%\GameShelf instead (paste that into File Explorer's address bar).
     validations:
-      required: true
+      required: false
